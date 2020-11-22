@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: var(--primary-grey);
+}
+
+:root {
+    /* Colors */
+    --white: #FFFFFF;
+    --primary-grey: #707070;
+    --red: #FF0000;
+
+    /* Fonts */
+
+}
+
+/* Header Area */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 88px;
+    width: 100%;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--primary-grey);
+}
+
+.logo {
+    margin: 0;
+    height: 45px;
+    width: 60px;
+}
+
+.khazer {
+    height: 50px;
+    width: 60px;
+    margin: 1.2rem;
+}
+
+/* Menu or Sidenav */
+
+span {
+    position: absolute;
+    right: 0;
+    padding: 1.6rem;
+    font-size: 24px;
+    color: var(--primary-grey);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:left;
+    background-color: var(--white);
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--primary-grey);
+    display: block;
+    transition: 0.3s;
+  
+  }
+
+  .sidenav .menu {
+    padding-top: 60px;
+  }
+
+  .sidenav .menu .item {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.6rem;
+  }
+
+  .sidenav .menu .item img {
+      height: 16px;
+      width: 16px;
+      padding: 8px 32px 8px 8px;
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    padding: 1.6rem;
+    color: var(--primary-grey);
+  }
+/* overskrift*/
+.overskrift{
+    padding: 1px;
+    margin: 1px;
+    color: #707070;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+/*Billedere*/
+.foto{
+    padding-top: 20px;
+}
+
+/*tekst*/
+.modeller{
+    color: #707070;
+}
+
+.streg{
+    border-left: 2px solid #707070;
+    padding: 0,5px;
+}
+
+.button{
+    text-decoration: none;
+    border: none;
+    margin-bottom: 20px;
+}
+.button img{
+    margin-top: 10px;
+}
+/* Footer Area */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    border-top: 2px solid var(--primary-grey);
+}
+
+.socials {
+    height: 35px;
+}
+
+.socials a{
+    height: 35px;
+    width: 35px;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 12px;
+}

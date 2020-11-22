@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/gabstyle.css">
+    <title>Find center</title>
+</head>
+<body>
+
+    <!--header-->
+
+    <header>
+        <a class="logo" href="index.html">
+            <img class="khazer" src="./images/Khazer.png" alt="Khazer">
+        </a> 
+            
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">MENU</a>
+            <div class="menu">
+                <a class="item" href="modeller.html">
+                    Modeller
+                    <img src="./images/arrow-left.png" alt="Arrow">
+                </a>
+                <a class="item" href="service.html">
+                    Service & Tilbehør
+                    <img src="./images/arrow-left.png" alt="Arrow">
+                </a>
+                <a class="item" href="findcenter.html">
+                    Find Porsche Center
+                    <img src="./images/arrow-left.png" alt="Arrow">
+                </a>
+                <a class="item" href="#">
+                    Brugte Biler
+                    <img src="./images/arrow-left.png" alt="Arrow">
+                </a>
+                <a class="item" href="#">
+                    Porsche Leasing
+                    <img src="./images/arrow-left.png" alt="Arrow">
+                </a>
+            </div>
+            
+          </div>
+          
+        <span style="cursor:pointer" onclick="openNav()">MENU</span>
+          
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+    </header>
+    
+    <!--Liste over centre-->
+
+    <div class="center">
+        <h1>FIND <br> CENTER</h1>
+        <hr>
+    </div>
+    
+    <section class="center">
+        <div class="kobenhavn">
+            <a href="#" id="ko" class="kob">København</a>
+                <br>
+                <img src="./images/pil.png" alt="klik her" width="50">
+                <hr>
+        </div>
+        <div class="aarhus">
+            <a href="#" id="aa" class="aar">Aarhus</a>
+                <br>
+                <img src="./images/pil.png" alt="klik her" width="50">
+                <hr>
+        </div>
+        <div class="vejle">
+            <a href="#" id="ve" class="vej">Vejle</a>
+                <br>
+                <img src="./images/pil.png" alt="klik her" width="50">
+                <hr>
+        </div>
+    </section>
+
+    <!--pop-up københavn-->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <h2>København</h2>
+            <p>Adresse:</p>
+            <h3>Banevingen 30 <br> 2200 københavn N</h3>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6663.661134426792!2d12.538431751665101!3d55.7064733491307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652524f44da6249%3A0x214f591ea35e3f0a!2sBanevingen%2030%2C%202200%20K%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1603835269441!5m2!1sda!2sdk" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+            <p>Kontakt:</p>
+            <h4>+45 46 911 911</h4>
+            <p>åbningstider:</p>
+            <h4>Man - Fre /09:00-17:30 <br> Lør /Lukket <br> Søn /11:00-16:00</h4>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('ko').addEventListener('click',
+        
+        function(){
+            document.querySelector('.bg-modal').style.display = 'flex';
+        });
+
+        document.querySelector('.close').addEventListener('click',
+        function(){
+            document.querySelector('.bg-modal').style.display = 'none';
+
+        });
+    </script>
+
+    <!--pop-up aarhus-->
+
+    <div class="bg-modal2">
+        <div class="modal-content2">
+            <div class="close2">+</div>
+            <h2>Aarhus</h2>
+            <p>Adresse:</p>
+            <h3>Grenåvej 347 <br> 8240 Risskov</h3>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2219.292292794296!2d10.252478!3d56.203908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3ef535e05f6d%3A0xa5b8465ce58a00c8!2sGren%C3%A5vej%20347%2C%208240%20Risskov!5e0!3m2!1sda!2sdk!4v1603852816821!5m2!1sda!2sdk" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+            <p>Kontakt</p>
+            <h4>+45 96 911 911</h4>
+            <p>åbningstider:</p>
+            <h4>Man - Fre /09:00-17:30 <br> Lør /Lukket <br> Søn /11:00-16:00</h4>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('aa').addEventListener('click',
+        
+        function(){
+            document.querySelector('.bg-modal2').style.display = 'flex';
+        });
+
+        document.querySelector('.close2').addEventListener('click',
+        function(){
+            document.querySelector('.bg-modal2').style.display = 'none';
+
+        });
+    </script>
+
+        <!--pop-up Vejle-->
+
+        <div class="bg-modal3">
+            <div class="modal-content3">
+                <div class="close3">+</div>
+                <h2>Vejle</h2>
+                <p>Adresse:</p>
+                <h3>Wittrupvej 1 <br> 7120 Vejle</h3>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4742.694670772526!2d9.595866341265038!3d55.72923546679095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c83e54ebe356b%3A0x5459c95c5969b619!2sWittrupvej%201%2C%207120%20Vejle!5e0!3m2!1sda!2sdk!4v1603853314841!5m2!1sda!2sdk" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                <p>Kontakt</p>
+                <h4>+45 96 133 901</h4>
+                <p>åbningstider:</p>
+                <h4>Man - Tor /09:00-17:30 <br> Fre /Lukket <br> Lør - Søn /11:00-16:00</h4>
+            </div>
+        </div>
+    
+        <script>
+            document.getElementById('ve').addEventListener('click',
+            
+            function(){
+                document.querySelector('.bg-modal3').style.display = 'flex';
+            });
+    
+            document.querySelector('.close3').addEventListener('click',
+            function(){
+                document.querySelector('.bg-modal3').style.display = 'none';
+    
+            });
+        </script>
+
+    <!--footer-->
+
+    <footer>
+        <div class="socials">
+            <a class="scl" href="#">
+                <img src="./images/Facebook.png" alt="Facebook"> 
+            </a>
+            <a class="scl" href="#">
+                <img src="./images/Youtube.png" alt="Youtube"> 
+             </a>
+            <a class="scl" href="#">
+                <img src="./images/Instagram.png" alt="Instagram"> 
+            </a>
+            <a class="scl" href="#">
+                <img src="./images/LinkedIN.png" alt="LinkedIN"> 
+            </a> 
+        </div>
+
+        <p class="copyright">
+            © Porsche Danmark 2020
+        </p>
+    </footer>
+
+</body>
+</html>
