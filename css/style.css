@@ -1,0 +1,559 @@
+    /* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: var(--primary-grey);
+}
+
+:root {
+    /* Colors */
+    --white: #FFFFFF;
+    --primary-grey: #707070;
+    --red: #FF0000;
+
+}
+
+/* Resetting standard margins on text */
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* GLOBAL STYLING */
+
+/* Header Area */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 88px;
+    width: 100%;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--primary-grey);
+}
+
+.logo {
+    margin: 0;
+    height: 45px;
+    width: 60px;
+}
+
+.khazer {
+    height: 50px;
+    width: 60px;
+    margin: 1.2rem;
+}
+
+/* Menu or Sidenav */
+
+.span {
+    position: absolute;
+    right: 0;
+    padding: 1.6rem;
+    font-size: 24px;
+    color: var(--primary-grey);
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:left;
+    background-color: var(--white);
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--primary-grey);
+    display: block;
+    transition: 0.3s;
+  
+  }
+
+  .sidenav .menu {
+    padding-top: 88px;
+  }
+
+  .sidenav .menu .item {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+      border-top: 2px solid var(--primary-grey);
+  }
+
+  .sidenav .menu .item img {
+      height: 16px;
+      width: 16px;
+      padding: 8px 32px 8px 8px;
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    padding: 1.6rem;
+    color: var(--primary-grey);
+  }
+
+/* Footer Area */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    border-top: 2px solid var(--primary-grey);
+    
+}
+
+.socials {
+    height: 35px;
+}
+
+.socials a{
+    height: 35px;
+    width: 35px;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 0.4rem;
+    font-size: 12px;
+}
+
+/* PAGE SPECIFIC STYLING */
+
+
+
+/* HOMEPAGE */
+
+
+/* News or Slideshow section - Homepage */
+
+.news {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top:130px;
+  }
+
+.ttl {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 0.8rem;
+    font-weight: 700;
+}
+
+.ttl h2 {
+    justify-content: center;
+    
+}
+
+.ttl img {
+    height: 16px;
+    width: 16px;
+    margin-top: 0.6rem;
+    padding: 0px 8px 0px 8px;
+}
+
+.fll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0.8rem 2.4rem 0.8rem 2.4rem;
+    font-weight: 500;
+}
+
+  /* The dots - Homepage */
+
+  .order {
+    height: 2rem;
+  }
+
+  .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0;
+      padding: 0;
+      background-color: var(--white);
+      border: 2px solid var(--primary-grey);
+      border-radius: 100%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+  }
+
+  .active {
+      background-color: var(--primary-grey);
+  }
+    
+  
+  /* Fading animation - Homepage */
+  .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 2.5s;
+      animation-name: fade;
+      animation-duration: 2.5s;
+  }
+      
+  @-webkit-keyframes fade {
+      from {opacity: 0.4} 
+      to {opacity: 1}
+  }
+
+  @keyframes fade {
+      from {opacity: 0.4} 
+      to {opacity: 1}
+  }
+
+
+  /* Models Area - Homepage */
+
+.models {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.models h1 {
+    font-size: 40px;
+    margin-top: 5.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.models a {
+    margin-top: 5px;
+}
+
+
+
+/* MODELS PAGE */
+
+
+/* TITEL - MODELS */
+.overskrift{
+    padding: 1px;
+    margin: 1px;
+    color: #707070;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+/* PICTURES - MODELS */
+.foto{
+    padding-top: 20px;
+}
+
+/* TEXT - MODELS */
+.modeller{
+    color: #707070;
+}
+
+.streg{
+    border-left: 2px solid #707070;
+    padding: 0,5px;
+}
+
+.button{
+    text-decoration: none;
+    border: none;
+    margin-bottom: 20px;
+}
+.button img{
+    margin-top: 10px;
+}
+
+
+/* SERVICE */
+
+
+/* PAGE INFO - SERVICE */
+
+body {
+    text-decoration: none;
+}
+
+.service h1 {
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.service h2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: medium;
+    text-align: start;
+    color: var(--quinary-color);
+}
+
+/* CONTAINERS WITH LINKS - SERVICE */
+
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;  
+}
+
+.assistance-h3, .connect-h3, .hjul-h3, .reservedel-h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.reservedel-h3 {
+    justify-content: center;
+}
+
+.container-1 h3 {
+    font-size: medium;
+    text-align: center;
+    color: var(--quinary-color);
+}
+
+.box-1 h3, .box-2 h3, .box-3 h3, .box-4 h3 {
+    text-align: center;
+    text-decoration: none;
+}
+
+.assistance-h3 img, .connect-h3 img, .hjul-h3 img, .reservedel-h3 img {
+    margin-top: 8px;
+}
+
+.reservedel-h3 img {
+    margin-top: 26px;
+}
+
+
+
+/* FIND CENTER */
+
+/* TITEL - FIND CENTER*/
+
+.center h1{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 40px;
+    margin-top: 130px;
+}
+
+.center hr{
+    border: 1px solid var(--primary-grey);
+    margin-left: 3.4em;
+}
+
+
+/*CENTER LIST - FIND CENTER*/
+
+a{
+    font-size: 30px;
+    text-decoration: none;
+    
+}
+
+.kobenhavn{
+    text-align: center;
+}
+
+.aarhus{
+    text-align: center;
+}
+
+.vejle{
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+/* POP-UP COPENHAGEN - FIND CENTER */
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content{
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    margin-top: 0;
+    margin-left: 1.5rem;
+}
+
+h4{
+    margin-top: 0;
+    margin-left: 1.5rem;
+}
+
+p{
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-left: 1.5rem;
+}
+
+.close{
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 39px;
+    transform: rotate(45deg);
+}
+
+/* POP-UP AARHUS - FIND CENTER */
+
+.bg-modal2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content2{
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    margin-top: 0;
+    margin-left: 1.5rem;
+}
+
+h4{
+    margin-top: 0;
+    margin-left: 1.5rem;
+}
+
+p{
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-left: 1.5rem;
+}
+
+.close2{
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 39px;
+    transform: rotate(45deg);
+}
+
+/* POP-UP VEJLE - FIND CENTER */
+
+.bg-modal3{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content3{
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    margin-top: 0;
+    margin-left: 1.5rem;
+}
+
+h4{
+    margin-top: 0;
+    margin-left: 1.5rem;
+}
+
+p{
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-left: 1.5rem;
+}
+
+.close3{
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 39px;
+    transform: rotate(45deg);
+}
+
+
+/* HR - FIND CENTER*/
+
+hr{
+    border: 1px solid var(--primary-grey);
+    background-color: var(--primary-grey);
+    margin-right: 3em;
+    margin-left: 1em;
+}
