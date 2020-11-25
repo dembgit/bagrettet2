@@ -692,22 +692,21 @@ hr{
 
       /* Models Area - Homepage */
 
-    .models {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px;
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 400px);
+        
     }
 
     .models h1 {
-        font-size: 150px;
+        font-size: 130px;
         margin-top: 5.5rem;
         margin-bottom: 5.5rem;
     }
 
     .models a {
-        margin-top: 150px;
+        margin-top: 0px;
     }
-
+    
 }
