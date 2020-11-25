@@ -648,7 +648,12 @@ hr{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top:130px;
+        margin-top: 130px;
+        width: 100%;
+    }
+
+    .news img {
+        height: 40rem;
     }
   
     .ttl {
@@ -668,7 +673,7 @@ hr{
         height: 16px;
         width: 16px;
         margin-top: 0.6rem;
-        padding: 0px 8px 0px 8px;
+        padding: 0px 16px 0px 16px;
     }
 
     .fll {
@@ -677,7 +682,7 @@ hr{
         align-items: center;
         text-align: left;
         margin: 0.8rem 2.4rem 0.8rem 2.4rem;
-        font-weight: 500;
+        font-weight: 700;
     }
   
     /* The dots - Homepage */
@@ -703,7 +708,7 @@ hr{
     }
 
 
-      /* Models Area - Homepage */
+    /* Models Area - Homepage */
 
     .grid {
         display: grid;
