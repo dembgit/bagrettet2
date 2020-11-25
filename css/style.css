@@ -58,6 +58,11 @@ header {
 
 /* Menu or Sidenav */
 
+.topnav {
+    /* This is for desktop */
+    display: none 
+}
+
 .span {
     position: absolute;
     right: 0;
@@ -588,6 +593,40 @@ hr{
     .febi {
         height: 90px;
         width: 100px;
+    }
+
+    /* Navigation */
+
+    .span {
+        display: none;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    nav {
+        margin-right: 1.4rem;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin-top: 1.6rem;
+        margin-right: 1.4rem;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    nav li {
+        margin-left: 2rem;
     }
 
 }
