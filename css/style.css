@@ -50,7 +50,7 @@ header {
     width: 60px;
 }
 
-.khazer {
+.febi {
     height: 50px;
     width: 60px;
     margin: 1.2rem;
@@ -248,6 +248,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .models h1 {
@@ -259,6 +260,11 @@ footer {
 .models a {
     margin-top: 5px;
 }
+
+.models img {
+    width: 100%;
+}
+
 
 
 
@@ -591,6 +597,7 @@ hr{
     }
     
     .febi {
+        margin: 0;
         height: 90px;
         width: 100px;
     }
@@ -629,6 +636,12 @@ hr{
         margin-left: 2rem;
     }
 
+    /* Footer Scaled */
+
+    .copyright {
+        margin-left: 0;
+    }
+    
     /* News or Slideshow section - Homepage */
 
     .news {
@@ -708,5 +721,5 @@ hr{
     .models a {
         margin-top: 0px;
     }
-    
+
 }
