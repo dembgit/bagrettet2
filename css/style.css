@@ -557,3 +557,37 @@ hr{
     margin-right: 3em;
     margin-left: 1em;
 }
+
+
+/* MEDIA QUERIES */
+
+
+
+/* 1920 x 1080 */
+@media screen and (min-width: 1080px) {
+
+    /* Header Scaled */
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        height: 88px;
+        width: 100%;
+        background-color: var(--white);
+        border-bottom: 2px solid var(--primary-grey);
+    }
+    
+    .logo {
+        margin: 0;
+        height: 90px;
+        width: 100px;
+    }
+    
+    .febi {
+        height: 90px;
+        width: 100px;
+    }
+
+}
