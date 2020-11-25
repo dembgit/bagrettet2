@@ -116,6 +116,10 @@ span {
     padding-top: 20px;
 }
 
+.foto img {
+    width: 100px;
+}
+
 /*tekst*/
 .modeller{
     color: #707070;
@@ -160,6 +164,12 @@ footer {
     font-size: 12px;
 }
 
-@media screen and (max-width: 666px){
+/*media screen til skærm størrelse 666*/
+
+@media screen and (min-width:1280px){
+   .foto img {
+       width: 500px;
+       
+   }
 
 }
