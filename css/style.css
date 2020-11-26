@@ -374,6 +374,10 @@ body {
     height: 150px;
 }
 
+.reservedel-img img {
+    margin-left: 1.6rem;
+}
+
 .assistance-h3, .connect-h3, .hjul-h3, .reservedel-h3 {
     text-align: center;
     margin-bottom: 2rem;
@@ -785,6 +789,10 @@ hr{
     .assistance-h3 img, .connect-h3 img, .hjul-h3 img, .reservedel-h3 img {
         display: none;
     }
+
+    .reservedel-img img {
+        margin-left: 0;
+    }    
     
     .container-1 h3 {
         margin-top: 2rem;
