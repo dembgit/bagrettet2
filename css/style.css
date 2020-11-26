@@ -272,6 +272,7 @@ footer {
 
 
 /* TITEL - MODELS */
+
 .overskrift{
     padding: 1px;
     margin: 1px;
@@ -281,13 +282,34 @@ footer {
     margin-top: 100px;
 }
 /* PICTURES - MODELS */
-.foto{
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     padding-top: 20px;
 }
 
+.foto img {
+    width: 100%;
+}
+
 /* TEXT - MODELS */
+
 .modeller{
     color: #707070;
+}
+
+.modeller h3 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.modeller h1 {
+    margin-top: 0;
+    margin-left: 1.2rem;
+    text-align: center;
 }
 
 .streg{
@@ -298,10 +320,16 @@ footer {
 .button{
     text-decoration: none;
     border: none;
+    margin-top: 1rem;
     margin-bottom: 20px;
+    margin-left: 0.7rem;
+    justify-content: center;
 }
+
 .button img{
     margin-top: 10px;
+    padding-left: 0.6em;
+    width: 10px;
 }
 
 
@@ -341,6 +369,11 @@ body {
     margin-bottom: 2.5rem;  
 }
 
+.assistance-img img, .connect-img img, .hjul-img img, .reservedel-img img {
+    width: 150px;
+    height: 150px;
+}
+
 .assistance-h3, .connect-h3, .hjul-h3, .reservedel-h3 {
     text-align: center;
     margin-bottom: 2rem;
@@ -368,7 +401,6 @@ body {
 .reservedel-h3 img {
     margin-top: 26px;
 }
-
 
 
 /* FIND CENTER */
@@ -725,6 +757,173 @@ hr{
 
     .models a {
         margin-top: 0px;
+    }
+
+    /* Info - Service */
+
+    .service h1 {
+        text-decoration: underline;
+    }
+
+    .service h2 {
+        margin-left: 25rem;
+        margin-right: 25rem;
+        margin-top: 3rem;
+        font-size: medium;
+        text-align: start;
+        color: var(--quinary-color);
+    }
+
+    /* Container - Service */
+
+    .container-1 {
+        justify-content: space-evenly;
+        margin-top: 10rem;
+        margin-bottom: 3rem; 
+    }
+
+    .assistance-h3 img, .connect-h3 img, .hjul-h3 img, .reservedel-h3 img {
+        display: none;
+    }
+    
+    .container-1 h3 {
+        margin-top: 2rem;
+        font-size: large;
+        text-align: center;
+        color: var(--primary-color);
+
+    }
+    
+    .container-1 img {
+        width: 275px;
+        border-radius: 1rem;
+        border: solid;
+    }
+
+    /* Titel - Find Center*/
+
+    .center h1{
+        margin-bottom: 4rem;
+        font-size: 55px;
+    }
+
+    /* City Names - Find Center*/
+
+    .kobenhavn{
+        margin-top: 3.5rem;
+    }
+
+    .aarhus{
+        margin-top: 3.5rem;
+    }
+
+    .vejle{
+        margin-top: 3.5rem;
+    }
+
+    .kobenhavn img, .aarhus img, .vejle img{
+        margin-bottom: 2.5rem;
+    }
+
+    .kobenhavn a, .aarhus a, .vejle a{
+        font-size: 45px;
+    }
+
+    /* Pop-ups - Find Center */
+    
+    .modal-content{
+        width: 1300px;
+        height: 750px;
+        background-color: white;
+        border-radius: 4px;
+        position: relative;
+        justify-content: center;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 45px;
+    }
+    
+    h3{
+        margin-top: 0;
+        margin-left: 1.5rem;
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    h4{
+        margin-top: 0;
+        margin-left: 1.5rem;
+        font-size: 30px;
+        text-align: center;
+
+    }
+    
+    p{
+        font-size: 22px;
+        margin-bottom: 0;
+        margin-left: 1.5rem;
+        text-align: center;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .close{
+        position: absolute;
+        top:0;
+        right: 14px;
+        font-size: 65px;
+        transform: rotate(45deg);
+    }
+
+    .modal-content2{
+        width: 1300px;
+        height: 750px;
+        background-color: white;
+        border-radius: 4px;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .close2{
+        position: absolute;
+        top:0;
+        right: 14px;
+        font-size: 65px;
+        transform: rotate(45deg);
+    }
+
+    .modal-content3{
+        width: 1300px;
+        height: 750px;
+        background-color: white;
+        border-radius: 4px;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .close3{
+        position: absolute;
+        top:0;
+        right: 14px;
+        font-size: 65px;
+        transform: rotate(45deg);
+    }
+
+    /* Map - Find Center */
+
+    iframe{
+        width: 1100px;
+        height: 300px;
+    }
+
+    .center img{
+        width: 30px;
     }
 
 }
