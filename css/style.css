@@ -272,6 +272,7 @@ footer {
 
 
 /* TITEL - MODELS */
+
 .overskrift{
     padding: 1px;
     margin: 1px;
@@ -281,6 +282,7 @@ footer {
     margin-top: 100px;
 }
 /* PICTURES - MODELS */
+
 .foto {
     display: flex;
     flex-direction: column;
@@ -294,8 +296,20 @@ footer {
 }
 
 /* TEXT - MODELS */
+
 .modeller{
     color: #707070;
+}
+
+.modeller h3 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.modeller h1 {
+    margin-top: 0;
+    margin-left: 1.2rem;
+    text-align: center;
 }
 
 .streg{
@@ -306,10 +320,16 @@ footer {
 .button{
     text-decoration: none;
     border: none;
+    margin-top: 1rem;
     margin-bottom: 20px;
+    margin-left: 0.7rem;
+    justify-content: center;
 }
+
 .button img{
     margin-top: 10px;
+    padding-left: 0.6em;
+    width: 10px;
 }
 
 
